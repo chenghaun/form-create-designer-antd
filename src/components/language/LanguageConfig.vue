@@ -24,18 +24,10 @@
         :row-selection="{ onChange: selectionChange }"
         row-key="key"
       >
-        <a-table-column type="selection" width="30px"></a-table-column>
-        <a-table-column
-          data-index="key"
-          title="Key"
-          width="90px"
-        ></a-table-column>
+        <a-table-column type="selection"></a-table-column>
+        <a-table-column data-index="key" title="Key"></a-table-column>
         <template v-for="item in localeOptions" :key="item.value">
-          <a-table-column
-            :data-index="item.value"
-            :title="item.label"
-            min-width="100px"
-          >
+          <a-table-column :data-index="item.value" :title="item.label">
             <template #default="{ record:row }">
               <template v-if="row.input">
                 <a-input
@@ -137,7 +129,7 @@ export default defineComponent({
       });
       this.selected = [];
     },
-    selectionChange(selectedRowKeys,selectedRows) {
+    selectionChange(selectedRowKeys, selectedRows) {
       this.selected = selectedRows;
     },
     randomString() {
@@ -173,6 +165,11 @@ export default defineComponent({
 </script>
 
 <style>
+._fd-language-config {
+  height: 100%;
+  overflow: auto;
+}
+
 ._fd-lc-body,
 ._fd-lc-header {
   padding: 0 12px;
@@ -182,19 +179,18 @@ export default defineComponent({
   overflow: auto;
 }
 
+._fd-lc-body .ant-table-cell {
+  padding: 8px 4px !important;
+}
+
 ._fd-lc-header {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 12px;
 }
 
-._fd-language-config {
-  height: 100%;
-  overflow: auto;
-}
-
-._fd-language-config .el-table__cell {
-  height: 34px;
+._fd-lc-header .ant-btn + .ant-btn {
+  margin-left: 12px;
 }
 
 ._fd-lc-handle {
