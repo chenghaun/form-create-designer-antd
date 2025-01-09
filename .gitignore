@@ -68,3 +68,4 @@ yarn.lock
 dist
 packages/*/locale
 .DS_Store
+locale/

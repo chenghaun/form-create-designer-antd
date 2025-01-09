@@ -604,7 +604,7 @@
 
 <script>
 import form from "../config/base/form";
-import field from "../config/base/field";
+import field from "../config/base/field.jsx";
 import style from "../config/base/style";
 import validate from "../config/base/validate";
 import { deepCopy } from "@form-create/utils/lib/deepextend";
@@ -1568,7 +1568,7 @@ export default defineComponent({
           const org = field;
           data.dragForm.api.sync(data.activeRule);
           if (field.indexOf("__") !== 0) {
-           if (field === "formCreateChild") {
+            if (field === "formCreateChild") {
               delete data.activeRule.children[0];
             } else if (
               field.indexOf("formCreate") === 0 ||
