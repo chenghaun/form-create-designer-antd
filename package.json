@@ -46,7 +46,7 @@
   "author": "xaboy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xaboy/form-create-designer/issues"
+    "url": "https://github.com/chenghaun/form-create-designer-antd/issues"
   },
   "homepage": "https://form-create.com",
   "devDependencies": {

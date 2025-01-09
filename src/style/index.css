@@ -403,6 +403,9 @@
     color: #fff;
 }
 
+
+
+
 ._fc-m-tools {
     height: 40px;
     align-items: center;
@@ -566,11 +569,6 @@
     border-bottom: 2px solid #409EFF;
 }
 
-._fc-m-con {
-    position: relative;
-    background: #F5F5F5;
-    padding: 20px 20px 36px;
-}
 
 ._fc-m-drag {
     margin: 0 auto;
@@ -1007,4 +1005,16 @@
 ._fd-drag-item>.ant-col {
     flex: 0 0 100%;
     max-width: 100%
+}
+
+._fc-m ._fc-m-con {
+    position: relative;
+    background: #F5F5F5;
+    padding: 20px 20px 36px 20px;
+}
+
+._fc-m-drag.mobile,
+._fc-m-drag.pad {
+    border-radius: 25px;
+    border: 10px solid #000
 }

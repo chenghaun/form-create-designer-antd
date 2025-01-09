@@ -94,10 +94,10 @@
     <a-layout-footer class="_fc-copyright" height="30px">
       <div class="_fc-b-item">
         <iframe
-          src="https://ghbtns.com/github-btn.html?user=xaboy&repo=form-create-designer&type=star&count=true"
+          src="https://ghbtns.com/github-btn.html?user=chenghaun&repo=form-create-designer-antd&type=star&count=true"
           frameborder="0"
           scrolling="0"
-          width="120"
+          width="80"
           height="21"
           title="GitHub"
         ></iframe>
@@ -105,18 +105,7 @@
       <span style="margin: 0 10px;">|</span>
       <div class="_fc-b-item">
         <a
-          href="https://gitee.com/xaboy/form-create-designer"
-          target="_blank"
-          style="display: inline-flex;"
-          ><img
-            src="https://gitee.com/xaboy/form-create-designer/badge/star.svg?theme=dark"
-            alt="gitee"
-        /></a>
-      </div>
-      <span style="margin: 0 10px;">|</span>
-      <div class="_fc-b-item">
-        <a
-          href="https://github.com/xaboy/form-create-designer"
+          href="https://github.com/chenghaun/form-create-designer-antd"
           target="_blank"
           style="display: inline-flex;"
         >
@@ -139,8 +128,8 @@
       <span style="color: red;" v-if="err">输入内容格式有误!</span>
       <template #footer>
         <span class="dialog-footer" v-if="type > 2">
-          <a-button @click="state = false" >取 消</a-button>
-          <a-button type="primary" @click="onOk" >确 定</a-button>
+          <a-button @click="state = false">取 消</a-button>
+          <a-button type="primary" @click="onOk">确 定</a-button>
         </span>
       </template>
     </a-modal>
