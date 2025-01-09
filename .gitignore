@@ -67,3 +67,4 @@ yarn.lock
 /index.html
 dist
 packages/*/locale
+.DS_Store
