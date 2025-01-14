@@ -1348,11 +1348,19 @@ export default defineComponent({
           ...(is.String(opt) ? JSON.parse(opt) : deepCopy(opt || {})),
         };
         options.form = {
-          inline: false,
-          hideRequiredAsterisk: false,
+          layout: "horizontal",
+          labelAlign: "right",
           labelPosition: "right",
-          size: "default",
-          labelWidth: "125px",
+          size: "middle",
+          colon: false,
+          labelCol: {
+            style: {
+              width: "125px",
+            },
+          },
+          wrapperCol: {
+            span: 24,
+          },
           ...defForm,
           ...(options.form || {}),
         };

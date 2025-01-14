@@ -2,7 +2,7 @@
  * @Author: ext.chenghuan8
  * @Date: 2025-01-03 14:22:41
  * @LastEditors: ext.chenghuan8
- * @LastEditTime: 2025-01-09 13:59:23
+ * @LastEditTime: 2025-01-14 18:01:30
  * @Description:
  * @contact_information: ext.chenghuan8@jd.com
  */
@@ -11,11 +11,16 @@ const En = {
   form: {
     field: "Field",
     title: "Title",
+    layout: 'Layout',
     info: "Info",
     control: "Control",
-    labelPosition: "Label position",
+    labelAlign: "Label position",
     labelStyle: "Label style",
+    labelWrap: "Label wrap",
     labelSuffix: "Label suffix",
+    colon:'Whether to display colons',
+    scrollToFirstError:'Scroll to first error',
+    ignoreHiddenFields: "Ignore hidden fields when submitting form",
     size: "Form size",
     event: "Form event",
     labelWidth: "Label width",
@@ -300,6 +305,7 @@ const En = {
     render: "Render",
     large: "large",
     default: "default",
+    middle:'middle',
     small: "small",
     always: "always",
     never: "never",
